@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slider {
+    width: 90%;
+    margin: 10px auto;
+    aspect-ratio: 2/1;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.slider img.active {
+    opacity: 1;
+}
+.slider div {
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    top: 5px;
+    color: white;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+}
+.slider-buttons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-buttons button {
+    border: none;
+    background-color: #00798a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    flex-basis: 100px;
+    flex-shrink: 1;
+    cursor: pointer;
+}
+.slider-buttons button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.bullets {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+.bullets li {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bullets li.active {
+    background-color: #00798a;
+    color: white;
+}
