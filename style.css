@@ -8,6 +8,7 @@ body {
 }
 .slider {
     width: 90%;
+    max-width: 1000px;
     margin: 10px auto;
     aspect-ratio: 2/1;
     position: relative;
@@ -34,6 +35,7 @@ body {
 }
 .slider-buttons {
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
